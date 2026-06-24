@@ -55,6 +55,7 @@ export default function Footer() {
               <li><Link href="/tentang" className={styles.link}>Tentang Kami</Link></li>
               <li><Link href="/produk" className={styles.link}>Produk</Link></li>
               <li><Link href="/kemitraan" className={styles.link}>Kemitraan</Link></li>
+              <li><Link href="/mitra" className={styles.link}>Portal Mitra</Link></li>
             </ul>
           </div>
 

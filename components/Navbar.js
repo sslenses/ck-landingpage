@@ -22,6 +22,7 @@ export default function Navbar() {
     { name: 'Tentang Kami', href: '/tentang' },
     { name: 'Produk', href: '/produk' },
     { name: 'Kemitraan', href: '/kemitraan' },
+    { name: 'Portal Mitra', href: '/mitra' },
   ];
 
   return (
