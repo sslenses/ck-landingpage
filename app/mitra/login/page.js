@@ -113,31 +113,6 @@ export default function MitraLogin() {
 
       <div className={`${styles.loginCard} glass-card`}>
         <div className={styles.cardHeader}>
-          <Link href="/" className={styles.logoGroup}>
-            <svg viewBox="0 0 100 100" width="48" height="48" className={styles.logoSvg}>
-              <defs>
-                <radialGradient id="loginRedGrad" cx="35%" cy="35%" r="65%">
-                  <stop offset="0%" stopColor="#ff3b30" />
-                  <stop offset="70%" stopColor="#b30000" />
-                  <stop offset="100%" stopColor="#4d0000" />
-                </radialGradient>
-              </defs>
-              <circle cx="50" cy="50" r="48" fill="url(#loginRedGrad)" />
-              <text 
-                x="50" 
-                y="52" 
-                fill="#ffffff" 
-                fontSize="44" 
-                fontWeight="800" 
-                fontFamily="var(--font-heading), sans-serif" 
-                textAnchor="middle" 
-                dominantBaseline="middle"
-              >
-                CK
-              </text>
-            </svg>
-            <span className={styles.logoText}>Cigarskruie</span>
-          </Link>
           <h2>Portal Kemitraan</h2>
           <p>Silakan masuk untuk mengelola jaringan dan pemesanan stok Anda.</p>
         </div>
