@@ -13,7 +13,12 @@ export default function Home() {
         
         <div className={styles.heroContent}>
           <div className={`${styles.heroTexts} scroll-reveal`}>
-            <span className={styles.badge}>🌿 100% Rempah Alami</span>
+            <span className={styles.badge}>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1 9.2a7 7 0 0 1-9 8.8zm0 0v-4" />
+              </svg>
+              100% Rempah Alami
+            </span>
             <h1 className={styles.title}>
               Sensasi Kretek Rempah <br />
               <span className={styles.titleHighlight}>Alami Nusantara</span>
@@ -55,7 +60,11 @@ export default function Home() {
 
         <div className={styles.featureGrid}>
           <div className={`${styles.featureCard} glass-card scroll-reveal`}>
-            <div className={styles.featureIcon}>🍂</div>
+            <div className={styles.featureIcon}>
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1 9.2a7 7 0 0 1-9 8.8zm0 0v-4" />
+              </svg>
+            </div>
             <h3>100% Rempah Asli</h3>
             <p>
               Diracik dari cengkeh pilihan, kayu manis, kapulaga, jinten hitam, madu klanceng, dan rempah berkhasiat lainnya tanpa saus kimia sintetis.
@@ -63,7 +72,11 @@ export default function Home() {
           </div>
 
           <div className={`${styles.featureCard} glass-card scroll-reveal`}>
-            <div className={styles.featureIcon}>🧬</div>
+            <div className={styles.featureIcon}>
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
             <h3>Khasiat Alami</h3>
             <p>
               Perpaduan rempah alami memberikan efek hangat yang melegakan dada, menjaga tenggorokan tetap plong, dan memiliki kadar nikotin yang lebih rendah.
@@ -71,7 +84,14 @@ export default function Home() {
           </div>
 
           <div className={`${styles.featureCard} glass-card scroll-reveal`}>
-            <div className={styles.featureIcon}>🤝</div>
+            <div className={styles.featureIcon}>
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--color-gold)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
             <h3>Ekonomi Berbagi</h3>
             <p>
               Didistribusikan melalui Sistem Lebah PT Catur Kencana Manajemen. Memberikan kemakmuran bersama bagi para anggota (Clubber CK) dan Kedai CK.
@@ -119,7 +139,12 @@ export default function Home() {
           </div>
 
           <div className={`${styles.teaserTexts} scroll-reveal`}>
-            <span className={styles.badge}>Sejarah & Filosofi</span>
+            <span className={styles.badge}>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5v-15z" />
+              </svg>
+              Sejarah & Filosofi
+            </span>
             <h2>Merawat Tradisi Kretek, Menghargai Kesehatan</h2>
             <p>
               Diproduksi oleh **PR Indokretek** di Malang, Jawa Timur, Cigarskruie lahir dari keprihatinan atas maraknya rokok kimia modern. Kami kembali ke akar sejarah kretek nusantara di mana rokok awalnya digunakan sebagai sarana penyembuhan tradisional (*kruie* atau rempah).

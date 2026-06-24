@@ -250,7 +250,11 @@ export default function MitraDashboard() {
             className={`${styles.navItem} ${activeTab === 'overview' ? styles.navActive : ''}`}
             onClick={() => { setActiveTab('overview'); setMobileMenuOpen(false); }}
           >
-            <span className={styles.navIcon}>📊</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={styles.navIcon}>
+              <line x1="18" y1="20" x2="18" y2="10" />
+              <line x1="12" y1="20" x2="12" y2="4" />
+              <line x1="6" y1="20" x2="6" y2="14" />
+            </svg>
             Ringkasan Mutasi
           </button>
           
@@ -258,7 +262,13 @@ export default function MitraDashboard() {
             className={`${styles.navItem} ${activeTab === 'network' ? styles.navActive : ''}`}
             onClick={() => { setActiveTab('network'); setMobileMenuOpen(false); }}
           >
-            <span className={styles.navIcon}>🐝</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={styles.navIcon}>
+              <circle cx="18" cy="5" r="3" />
+              <circle cx="6" cy="12" r="3" />
+              <circle cx="18" cy="19" r="3" />
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+            </svg>
             Jaringan Lebah
           </button>
 
@@ -266,7 +276,13 @@ export default function MitraDashboard() {
             className={`${styles.navItem} ${activeTab === 'stock' ? styles.navActive : ''}`}
             onClick={() => { setActiveTab('stock'); setMobileMenuOpen(false); }}
           >
-            <span className={styles.navIcon}>📦</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={styles.navIcon}>
+              <line x1="16.5" y1="9.4" x2="7.5" y2="4.21" />
+              <polygon points="12 22.08 12 12 3 6.92 3 17.08 12 22.08" />
+              <polygon points="12 12 21 6.92 21 17.08 12 22.08" />
+              <polygon points="12 2 21 6.92 12 12 3 6.92 12 2" />
+              <line x1="12" y1="22.08" x2="12" y2="12" />
+            </svg>
             {session.role === 'kedai' ? 'Inventori & Restok' : 'Pesan Produk'}
           </button>
 
@@ -274,14 +290,21 @@ export default function MitraDashboard() {
             className={`${styles.navItem} ${activeTab === 'tools' ? styles.navActive : ''}`}
             onClick={() => { setActiveTab('tools'); setMobileMenuOpen(false); }}
           >
-            <span className={styles.navIcon}>🔗</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={styles.navIcon}>
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+            </svg>
             Alat Penjualan WA
           </button>
         </nav>
 
         <div className={styles.sidebarFooter}>
           <button onClick={handleLogout} className={styles.logoutBtn}>
-            <span className={styles.logoutIcon}>🚪</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={styles.logoutIcon}>
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+              <polyline points="16 17 21 12 16 7" />
+              <line x1="21" y1="12" x2="9" y2="12" />
+            </svg>
             Keluar Sesi
           </button>
         </div>
@@ -306,7 +329,13 @@ export default function MitraDashboard() {
             <div className={styles.kpiGrid}>
               <div className={`${styles.kpiCard} glass-card`}>
                 <div className={styles.kpiIconGroup}>
-                  <span className={styles.kpiIcon} style={{ background: 'rgba(212,175,55,0.1)', color: 'var(--color-gold)' }}>💰</span>
+                  <span className={styles.kpiIcon} style={{ background: 'rgba(212,175,55,0.1)', color: 'var(--color-gold)' }}>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4" />
+                      <path d="M4 6v12a2 2 0 0 0 2 2h14v-4" />
+                      <path d="M18 12a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4v-6z" />
+                    </svg>
+                  </span>
                   <span className={styles.kpiTrend}>+12.4%</span>
                 </div>
                 <h3>Komisi Terkumpul</h3>
@@ -316,7 +345,11 @@ export default function MitraDashboard() {
 
               <div className={`${styles.kpiCard} glass-card`}>
                 <div className={styles.kpiIconGroup}>
-                  <span className={styles.kpiIcon} style={{ background: 'rgba(18,62,30,0.15)', color: '#86efac' }}>🌿</span>
+                  <span className={styles.kpiIcon} style={{ background: 'rgba(18,62,30,0.15)', color: '#86efac' }}>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1 9.2a7 7 0 0 1-9 8.8zm0 0v-4" />
+                    </svg>
+                  </span>
                   <span className={styles.kpiTrend}>+8%</span>
                 </div>
                 <h3>Poin Jaringan</h3>
@@ -326,7 +359,14 @@ export default function MitraDashboard() {
 
               <div className={`${styles.kpiCard} glass-card`}>
                 <div className={styles.kpiIconGroup}>
-                  <span className={styles.kpiIcon} style={{ background: 'rgba(59,130,246,0.1)', color: '#60a5fa' }}>🐝</span>
+                  <span className={styles.kpiIcon} style={{ background: 'rgba(59,130,246,0.1)', color: '#60a5fa' }}>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                  </span>
                   <span className={styles.kpiTrend}>+3 baru</span>
                 </div>
                 <h3>Mitra Binaan</h3>
@@ -442,7 +482,14 @@ export default function MitraDashboard() {
                   )}
                 </svg>
               </div>
-              <p className={styles.chartTip}>💡 <em>Arahkan kursor Anda ke titik grafik untuk melihat rincian mutasi komisi bulanan secara mendetail.</em></p>
+              <p className={styles.chartTip}>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.4rem', marginTop: '-2px' }}>
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="16" x2="12" y2="12" />
+                  <line x1="12" y1="8" x2="12.01" y2="8" />
+                </svg>
+                <em>Arahkan kursor Anda ke titik grafik untuk melihat rincian mutasi komisi bulanan secara mendetail.</em>
+              </p>
             </div>
           </div>
         )}
@@ -630,7 +677,10 @@ export default function MitraDashboard() {
                         className="btn btn-primary"
                         style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem', minHeight: '44px' }}
                       >
-                        <span>💬</span> Kirim Form Pesanan via WA
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                        </svg>
+                        Kirim Form Pesanan via WA
                       </button>
                     </div>
                   </div>
@@ -733,7 +783,10 @@ export default function MitraDashboard() {
                         className="btn btn-primary"
                         style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem', minHeight: '44px' }}
                       >
-                        <span>💬</span> Hubungi Kedai & Kirim Order
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                        </svg>
+                        Hubungi Kedai & Kirim Order
                       </button>
                     </div>
                   </div>
@@ -829,9 +882,24 @@ export default function MitraDashboard() {
                       <button 
                         onClick={handleCopyLink} 
                         className={`btn ${copied ? 'btn-secondary' : 'btn-primary'}`}
-                        style={{ flex: 1, minHeight: '42px' }}
+                        style={{ flex: 1, minHeight: '42px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem' }}
                       >
-                        {copied ? '✅ Berhasil Disalin' : '📋 Salin Tautan'}
+                        {copied ? (
+                          <>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Berhasil Disalin
+                          </>
+                        ) : (
+                          <>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                              <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                            </svg>
+                            Salin Tautan
+                          </>
+                        )}
                       </button>
 
                       <a 
@@ -839,9 +907,12 @@ export default function MitraDashboard() {
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="btn btn-secondary"
-                        style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '42px', textDecoration: 'none' }}
+                        style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem', minHeight: '42px', textDecoration: 'none' }}
                       >
-                        🚀 Uji Kirim Chat
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                        </svg>
+                        Uji Kirim Chat
                       </a>
                     </div>
 
