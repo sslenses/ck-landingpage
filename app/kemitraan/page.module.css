@@ -1,0 +1,154 @@
+.headerSection {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  position: relative;
+}
+
+.glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(18, 62, 30, 0.1) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.introText {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+.modelSection {
+  background: rgba(15, 22, 16, 0.2);
+  padding: 6rem 2rem;
+}
+
+.sectionHeader {
+  max-width: 700px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.sectionSubtitle {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.modelGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.modelCard {
+  background: rgba(15, 22, 16, 0.4);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cardIcon {
+  font-size: 2.5rem;
+  background: rgba(18, 62, 30, 0.2);
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.modelCard h3 {
+  font-size: 1.25rem;
+  color: var(--color-text-title);
+}
+
+.modelCard p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Form and Finder splits */
+.interactiveSection {
+  padding: 6rem 2rem;
+}
+
+.interactiveGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.sectionTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sectionTexts h2 {
+  font-size: 2.2rem;
+}
+
+.sectionTexts p {
+  color: var(--color-text-body);
+}
+
+.benefitList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.benefitItem {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  font-size: 1rem;
+}
+
+.benefitCheck {
+  color: var(--color-gold);
+  font-weight: bold;
+}
+
+.benefitContent h4 {
+  font-size: 1.05rem;
+  color: var(--color-text-title);
+  margin-bottom: 0.25rem;
+}
+
+.benefitContent p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 968px) {
+  .modelGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .interactiveGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

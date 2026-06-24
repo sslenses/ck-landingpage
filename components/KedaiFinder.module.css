@@ -1,0 +1,117 @@
+.finderContainer {
+  background: rgba(15, 22, 16, 0.4);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.filterRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.outletCard {
+  background: rgba(7, 11, 8, 0.5);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.outletCard:hover {
+  border-color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.outletHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.outletName {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text-title);
+}
+
+.outletRegion {
+  font-size: 0.8rem;
+  color: var(--color-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.outletDetails {
+  font-size: 0.9rem;
+  color: var(--color-text-body);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detailItem {
+  display: flex;
+  gap: 0.5rem;
+  line-height: 1.4;
+}
+
+.detailIcon {
+  color: var(--color-gold);
+  flex-shrink: 0;
+}
+
+.cardAction {
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.cardAction a {
+  width: 100%;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+  min-height: 36px;
+}
+
+/* Empty State */
+.emptyState {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--color-text-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .filterRow {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .finderContainer {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,127 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(15, 22, 16, 0.4);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-gold);
+  background: rgba(18, 62, 30, 0.2);
+}
+
+.activeCard {
+  border-color: var(--color-gold);
+  background: rgba(18, 62, 30, 0.35) !important;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+.icon {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.spiceName {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text-title);
+}
+
+/* Detail Box */
+.detailBox {
+  background: rgba(15, 22, 16, 0.6);
+  border: 1px solid var(--color-gold);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  box-shadow: var(--shadow-glow);
+  position: relative;
+  overflow: hidden;
+  transition: opacity var(--transition-medium);
+}
+
+.detailBox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--color-gold), var(--color-amber));
+}
+
+.detailIcon {
+  font-size: 4rem;
+  flex-shrink: 0;
+  background: rgba(18, 62, 30, 0.3);
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.detailInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detailTitle {
+  font-size: 1.6rem;
+  color: var(--color-gold);
+}
+
+.detailLatin {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-top: -0.25rem;
+}
+
+.detailDesc {
+  color: var(--color-text-body);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .detailBox {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .detailIcon {
+    width: 80px;
+    height: 80px;
+    font-size: 3rem;
+  }
+}
