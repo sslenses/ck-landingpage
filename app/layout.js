@@ -1,7 +1,6 @@
 import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import LayoutWrapper from "@/components/LayoutWrapper";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const outfit = Outfit({
@@ -26,14 +25,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="id" className={`${outfit.variable} ${inter.variable}`}>
-      <body style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        <Navbar />
-        <main style={{ flexGrow: 1, paddingTop: '72px' }}>
-          {children}
-        </main>
-        <Footer />
+      <LayoutWrapper>
+        {children}
         <ScrollReveal />
-      </body>
+      </LayoutWrapper>
     </html>
   );
 }

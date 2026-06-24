@@ -1,7 +1,7 @@
 .dashboardContainer {
   display: grid;
   grid-template-columns: 280px 1fr;
-  min-height: calc(100vh - 72px);
+  min-height: 100vh;
   background: var(--color-bg);
   position: relative;
 }
@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  min-height: calc(100vh - 72px);
+  min-height: 100vh;
   background: var(--color-bg);
   color: var(--color-text-muted);
 }
@@ -27,8 +27,8 @@
   gap: 2rem;
   height: 100%;
   position: sticky;
-  top: 72px;
-  max-height: calc(100vh - 72px);
+  top: 0;
+  max-height: 100vh;
   z-index: 100;
 }
 
@@ -202,7 +202,7 @@
 .mainContent {
   padding: 2.5rem;
   overflow-y: auto;
-  max-height: calc(100vh - 72px);
+  max-height: 100vh;
 }
 
 .panel {
@@ -880,7 +880,7 @@
   background: rgba(7, 11, 8, 0.95);
   border-bottom: 1px solid rgba(212, 175, 55, 0.1);
   position: sticky;
-  top: 72px;
+  top: 0;
   z-index: 200;
 }
 
@@ -921,10 +921,10 @@
 
   .sidebar {
     position: fixed;
-    top: 121px; /* 72px navbar + 49px mobileHeader */
+    top: 49px; /* mobileHeader is 49px high */
     left: -100%;
     width: 280px;
-    height: calc(100vh - 121px);
+    height: calc(100vh - 49px);
     transition: left var(--transition-medium);
     z-index: 150;
     box-shadow: 10px 0 30px rgba(0,0,0,0.5);
