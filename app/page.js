@@ -34,14 +34,13 @@ export default function Home() {
           <div className={`${styles.heroVisual} scroll-reveal-scale`}>
             <div className={styles.imageFrame}>
               <Image 
-                src="/cigarskruie_hero.png" 
-                alt="Cigarskruie Herbal Cigarettes and Cigars Pack" 
-                width={480}
-                height={480}
+                src="/cigarskruie_hero.jpg" 
+                alt="Cigarskruie Edisi Semarang Raya" 
+                width={520}
+                height={520}
                 className={styles.heroImage}
                 priority
               />
-              <div className={styles.visualTag}>Malang, Sejak 2012</div>
             </div>
           </div>
         </div>
